@@ -1,0 +1,32 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+img{
+    /* a태그와 img가 중첩되어 생기는 공백문자를 제거하기 위해 */
+    /* 이미지는 이제 block요소이기 때문에 가운데 배치할 때 margin 0 auto를 써야 함 */
+    display: block;
+    
+    /* 
+        때로는 이미지가 너무 커서 코딩할 때 성가신 상황을 막기 위해
+        부모 공간을 넘어서지 않도록 limit
+    */
+    max-width: 100%;
+    max-height: 100%;
+}
+button{cursor: pointer;}
+button, input, select, option, textarea{
+    background-color: transparent;    
+    resize: none;
+    border: 0;
+}

@@ -1,0 +1,72 @@
+@media (min-width: 1024px) {
+    /* desktop */
+    header h1{
+        order: 1;
+        width: 10%;
+    }
+    header .btn-opn{display: none;}
+    header .btn-mypage{
+        order: 3;
+    }
+    header nav{
+        position: unset;
+        width: calc(90% - 65px);
+        overflow-y: unset;
+        order: 2;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    header nav .util{
+        position: relative;
+    }
+    header nav .util .btn-cls{display: none;}
+    header nav .util form{}
+    header nav .util:hover form .search-box{
+        height: unset;
+        padding: 16px 16px;
+    }
+    header nav .util form .search-box{
+        transition: all 0.3s;
+        width: 320px;
+        height: 0;
+        padding: 0 16px;
+        overflow: hidden;
+        position: absolute;
+        /* width: unset; */
+        top: 100%;
+        right: 0;
+        border-radius: 8px;
+        background-color: rgba(0,0,0,0.6);
+    }
+    header nav .util form .search-box input{
+        width: 200px;
+        height: 32px;
+        transition: all 0.3s;
+    }
+
+    header nav .util form .search-box input:focus{
+        width: 100%;
+    }
+
+    header nav .gnb{
+        flex-direction: row;
+        width: calc(100% - 65px);
+        /* nav에서 돋보기 들어갈 공간 65px 뺌 */
+    }
+    header nav .gnb .menu{
+        border-top: unset;
+        /* width: calc(100% / 8); */
+        width: 12.5%;
+    }
+    header nav .gnb .menu a{
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        height: 63px;
+    }
+    header nav .gnb .menu.red a{
+        background-color: #e70404;
+    }
+}
